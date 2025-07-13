@@ -1,0 +1,145 @@
+/* Dramatic Theatre Theme Colors */
+/* :root {
+  --primary: #b64b48;
+  --black: #000;
+  --white: #fff;
+  --beige: #f5e9da;
+  --bs-primary: #7a74b3;   
+  --bs-secondary: #afafd6; 
+  --bs-warning: #e3e5f1;  
+  --bs-info: #9f9dcc;      
+  --bs-success: #cccde6;   
+  --bs-danger: #49446e;    
+  --bs-light: #f7f7fb;     
+  --bs-dark: #2e2c49;  
+} */
+
+body {
+  background-color: #000000;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* a{
+  text-decoration: none;
+  color: #ede6e6;
+}
+a:hover{
+  color: #f28c4b;
+} */
+
+/* a, .btn-link {
+  color: var(--bs-dark);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+a:hover, .btn-link:hover {
+  color: var(--black);
+} */
+
+/* .btn-primary, .btn[style*='background: #b64b48'] {
+  background: var(--primary) !important;
+  border: none !important;
+  color: var(--white) !important;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.2s;
+  box-shadow: 0 4px 24px rgba(182,75,72,0.18);
+}
+.btn-primary:hover, .btn[style*='background: #b64b48']:hover {
+  background: #a13d3a !important;
+  color: var(--beige) !important;
+  transform: scale(1.05);
+} */
+
+/* section, .beige-section {
+  background: var(--beige);
+  color: var(--black);
+  box-shadow: 0 4px 32px rgba(0,0,0,0.10);
+}
+
+.card, .service-card {
+  background: var(--beige) !important;
+  color: var(--black) !important;
+  border: none;
+  box-shadow: 0 2px 16px rgba(182,75,72,0.10);
+  border-radius: 1rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card-title {
+  font-family: 'Playfair Display', serif;
+  color: var(--primary);
+}
+.service-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(182,75,72,0.18);
+} */
+
+
+
+
+/* Header or Navbar */
+.navbar {
+  background-color: #000000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.24);
+}
+.navbar-brand {
+  color: var(--primary) !important;
+  font-size: 2.2rem !important;
+  letter-spacing: 2px;
+}
+.nav-link {
+  color: #988d8d !important;
+  font-family: 'Montserrat', sans-serif;
+}
+.nav-link.active, .nav-link:focus, .nav-link:hover {
+  color: #f28c4b !important;
+}
+
+
+/* Footer */
+footer {
+  background: var(--black) !important;
+  /* color: var(--beige) !important; */
+}
+footer a {
+  text-decoration: none;
+  font-size: 16px;
+  color: grey;
+}
+footer a:hover {
+  color: #f28c4b;
+}
+footer .icon{
+  color: #f28c4b;
+  font-size: 20px;
+  margin-right: 10px;
+}
+footer h6{
+  color: #f28c4b;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 550;
+}
+footer ul{
+  list-style: none;
+  color: grey;
+  font-size: 16px;
+}
+footer hr{
+  background-color: #f28c4b;
+  height: 1px;
+  width: 100%;
+  border: none;
+}
+footer .copy{
+  color: grey;
+  font-size: 16px;
+}
+
+@media (max-width : 768px){
+  footer .copy{
+    font-size: 14px;
+  }
+}

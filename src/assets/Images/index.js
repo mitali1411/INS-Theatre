@@ -1,0 +1,47 @@
+import Image1 from '../../assets/1.jpg'
+import Image2 from '../../assets/2.jpg'
+import Image3 from '../../assets/3.jpg'
+import Image4 from '../../assets/21.jpg'
+import Image5 from '../../assets/22.jpg'
+import Image6 from '../../assets/23.jpg'
+import Image7 from '../../assets/24.jpg'
+import Image8 from '../../assets/25.jpg'
+import Image9 from '../../assets/26.jpg'
+import Image10 from '../../assets/27.png'
+import Image11 from '../../assets/28.jpg'
+import Image12 from '../../assets/29.jpg'
+import Image13 from '../../assets/30.jpg'
+import Image14 from '../../assets/31.jpg'
+import Image15 from '../../assets/32.jpg'
+import Image16 from '../../assets/33.jpg'
+import Image17 from '../../assets/34.jpg'
+import Image18 from '../../assets/35.jpg'
+import Image19 from '../../assets/36.jpg'
+import Image20 from '../../assets/37.jpg'
+import Image21 from '../../assets/38.jpg'
+import Image22 from '../../assets/39.jpg'
+import Image23 from '../../assets/40.jpg'
+import News1 from '../../assets/NEWS/1.jpg'
+import News2 from '../../assets/NEWS/2.jpg'
+import News3 from '../../assets/NEWS/3.jpg'
+import News4 from '../../assets/NEWS/4.jpg'
+import News5 from '../../assets/NEWS/5.jpg'
+import News6 from '../../assets/NEWS/6.jpg'
+import News7 from '../../assets/NEWS/7.jpg'
+import News8 from '../../assets/NEWS/8.jpg'
+import News9 from '../../assets/NEWS/9.jpg'
+import News10 from '../../assets/NEWS/10.jpg'
+import News11 from '../../assets/NEWS/11.jpg'
+import News12 from '../../assets/NEWS/12.jpg'
+import SocialWork1 from '../../assets/NEWS/sw1.jpg'
+import SocialWork2 from '../../assets/NEWS/sw2.jpg'
+import SocialWork3 from '../../assets/NEWS/sw3.jpg'
+import SocialWork4 from '../../assets/NEWS/sw4.jpg'
+
+
+
+
+export {Image1, Image2, Image3, Image4, Image5, Image6, Image7, Image8, Image9, Image10, Image11, Image12, Image13, Image14, Image15, Image16, Image17, Image18, Image19, Image20, Image21, Image22, Image23,
+    News1, News2, News3, News4, News5, News6, News7, News8, News9, News10, News11, News12,
+    SocialWork1, SocialWork2, SocialWork3, SocialWork4};
+
