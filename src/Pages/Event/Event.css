@@ -1,0 +1,177 @@
+/* Event Section */
+.event-section {
+  width: 100%;
+  padding: 50px 0 0 0;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.event-filters {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  margin-bottom: 2.5rem;
+}
+
+.event-filter-btn {
+  border-radius: 2rem;
+  border: 1.5px solid #f28c4b;
+  background: #f28c4b;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding: 0.5rem 2.2rem;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+}
+.event-filter-btn.active,
+.event-filter-btn:hover {
+  background: #f28c4b;
+  color: #fff;
+  border: 1.5px solid #f28c4b;
+}
+
+.event-cards-row {
+  width: 100%;
+  justify-content: center;
+}
+
+.event-card {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  border-radius: 1.2rem;
+  overflow: hidden;
+  position: relative;
+  transition: box-shadow 0.2s, transform 0.2s;
+  /* min-height: 420px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.event-card:hover {
+  box-shadow: 0 8px 32px rgba(242,140,75,0.13);
+  transform: translateY(-6px) scale(1.03);
+}
+
+.event-img-wrapper {
+  position: relative;
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+  border-radius: 1.2rem 1.2rem 0 0;
+}
+.event-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: brightness(0.7);
+  transition: filter 0.3s;
+}
+.event-card:hover .event-img {
+  filter: brightness(0.9);
+}
+
+.event-date-circle {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 90px;
+  height: 90px;
+  background: rgba(0,0,0,0.35);
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #fff;
+  color: #fff;
+  font-family: 'Montserrat', Arial, sans-serif;
+  z-index: 2;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+}
+.event-date-month {
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-bottom: 0.2rem;
+}
+.event-date-day {
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.event-card-content {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 2.5rem 2rem 1.5rem 2rem;
+  color: #fff;
+  z-index: 2;
+  background: linear-gradient(0deg, rgba(0,0,0,0.7) 70%, rgba(0,0,0,0.1) 100%);
+  border-radius: 0 0 1.2rem 1.2rem;
+}
+.event-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+  color: #fff;
+}
+.event-datetime {
+  font-size: 1.1rem;
+  color: #fff;
+  margin-top: 0.5rem;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+@media (max-width: 1100px) {
+  .event-img-wrapper {
+    height: 250px;
+  }
+  .event-date-circle {
+    width: 70px;
+    height: 70px;
+    top: 14px;
+    right: 14px;
+  }
+  .event-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .event-section {
+    padding: 30px 0 0 0;
+  }
+  .event-filters {
+    gap: 0.7rem;
+    margin-bottom: 1.5rem;
+  }
+  .event-filter-btn {
+    font-size: 1rem;
+    padding: 0.4rem 1.2rem;
+  }
+  .event-img-wrapper {
+    height: 180px;
+  }
+  .event-card-content {
+    padding: 1.2rem 1rem 0.8rem 1rem;
+  }
+  .event-title {
+    font-size: 1.1rem;
+  }
+  .event-date-circle {
+    width: 50px;
+    height: 50px;
+    font-size: 0.9rem;
+    top: 8px;
+    right: 8px;
+  }
+  .event-date-day {
+    font-size: 1.1rem;
+  }
+} 

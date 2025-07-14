@@ -100,7 +100,7 @@ a:hover, .btn-link:hover {
 
 /* Footer */
 footer {
-  background: var(--black) !important;
+  background: #000000;
   /* color: var(--beige) !important; */
 }
 footer a {

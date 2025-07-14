@@ -44,7 +44,7 @@ const History = () => {
   const [selected, setSelected] = useState(0);
 
   return (
-    <section className='about'>
+    <section className='history'>
       <Container>
         <h3 className="discover-title text-center mb-4">
           Our Theatre <em className='creative-hub'>History</em>

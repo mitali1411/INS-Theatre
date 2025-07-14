@@ -7,7 +7,7 @@ import Footer from './Component/Footer';
 import Home from './Pages/Home';
 import About from './Pages/About/About';
 import Services from './Pages/Services/Services';
-import Events from './Pages/Events';
+import Events from './Pages/Event/Events';
 import Contact from './Pages/Contact';
 
 function App() {
