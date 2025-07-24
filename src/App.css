@@ -121,6 +121,7 @@ footer h6{
   text-transform: uppercase;
   font-size: 18px;
   font-weight: 550;
+  margin-top: 10px;
 }
 footer ul{
   list-style: none;
@@ -142,4 +143,106 @@ footer .copy{
   footer .copy{
     font-size: 14px;
   }
+}
+
+
+/* Contact Page */
+
+/* Form */
+.form{
+  width: 100%;
+  height: auto;
+  padding: 50px;
+  border-radius: 12px;
+  box-shadow: '0 2px 8pxrgb(255, 101, 5)',
+}
+.form h2{
+  font-size: 28px;
+}
+.form p{
+  text-align: justify;
+}
+.form-controls{
+  border-radius: 5px;
+  border: 1.5px solid #f28c4b;
+  margin-bottom: 5px;
+  box-shadow: none;
+  background: rgb(238, 234, 231);
+  /* padding: 12px */
+}
+.form .btn{
+  background: #f28c4b;
+  border: none;
+  font-weight: bold;
+  padding: 8px 22px;
+  font-size: 18px;
+  margin-top: 0.5rem
+}
+
+@media (max-width : 360px){
+  .form h2{
+    font-size: 23px;
+  }
+  .form p{
+    font-size: 14px;
+  }
+  .form .btn{
+    padding: 6px 20px;
+    font-size: 15px;
+  }
+}
+
+/* Info */
+.info{
+  width: 100%;
+  height: auto;
+}
+.info h4{
+  font-size: 25px;
+  font-weight: 550;
+  color: #f28c4b;
+  margin-bottom: 30px;
+}
+.info-box{
+  width: 100%;
+  height: auto;
+  padding: 10px;
+}
+.info-box h6{
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  color: #f28c4b;
+  /* text-decoration: underline; */
+}
+.info-box .icon{
+  font-size: 25px;
+  color: #f28c4b;
+  margin-right: 12px;
+}
+.info-box ul{
+  list-style: circle;
+  margin-left: 0px
+}
+.info-box ul a{
+  text-decoration: none;
+  color: #3e3a39;
+  font-size: 17px;
+}
+
+@media (max-width : 360px){
+.info h4{
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.info-box ul a{
+  font-size: 14px;
+}
+.info h6{
+  font-size: 18px;
+}
+.info .icon{
+  font-size: 21px;
+  margin-right: 5px;
+}
 }

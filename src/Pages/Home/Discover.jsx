@@ -3,7 +3,7 @@ import 'aos/dist/aos.css';
 import AOS from 'aos';
 import './Home.css';
 import { FaMicrophone, FaTheaterMasks } from 'react-icons/fa';
-import { Container, Row } from 'react-bootstrap';
+import { Col, Container, Row } from 'react-bootstrap';
 
 
 const Discover = () => {
@@ -41,17 +41,17 @@ const Discover = () => {
       <div className='discover-cards'>
         <Container>
           <Row>
-          <div className="row">
+          {/* <div className="row"> */}
         {services.map((item, index) => 
-        <div className='col-xl-3 col-md-4 col-sm-6 col-xs-6' key={index}>
-          <div className='discover-card'>
+        <Col xl={3} md={4} sm={6} xs={12} key={index}>
+          <div className='discover-card m-2'>
             <div className='discover-icon'>{item.icon}</div>
           <h3>{item.title}</h3>
           <p>{item.desc}</p>
         </div>
-        </div>
+        </Col>
       )}
-        </div>
+        {/* </div> */}
           </Row>
         </Container>
       </div>

@@ -4,7 +4,7 @@ import Program from './Home/Program'
 import Section2 from './Home/Section2'
 import Discover from './Home/Discover'
 import Testimonial from './Home/Testimonial'
-import News from './News/News'
+import News from './News/NewsHome'
 
 const Home = () => {
   return (

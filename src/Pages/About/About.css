@@ -7,8 +7,7 @@
     width: 100%;
     height: auto;
     font-family: 'Montserrat', sans-serif;
-    padding: 50px;
-    /* padding: 50px; */
+    padding-block: 50px;
 }
 .year{
     width: 100%;
@@ -98,6 +97,7 @@ hr{
         padding-inline: 90px;
     }
 }
+
 @media (max-width: 1200px){
     .year{
         padding-inline: 0px;
@@ -106,6 +106,7 @@ hr{
         padding-inline: 72px;
     }
 }
+
 @media (max-width: 990px){
     .year{
         padding-inline: 0px;
@@ -117,6 +118,7 @@ hr{
         padding-inline: 30px;
     }
 }
+
 @media (max-width: 768px) {
     .year .flex-fill{
         font-size: 15px;
@@ -125,18 +127,37 @@ hr{
         padding-inline: 12px;
     }
     .dot{
-        padding-inline: 40px;
+        padding-inline: 65px;
+    }
+    .dot div{
+        height: 12px;
+        width: 12px;
     }
     .card-content{
         padding-inline: 30px;
     }
     .card-content h3{
-        font-size: 18px;
+        font-size: 20px;
     }
     .card-content p{
-        font-size: 12px;
+        font-size: 15px;
     }
 }
+
+@media (max-width: 640px) {
+    .about-hero-section{
+        height: 60vh;
+    }
+    .about-hero-section h1{
+        font-size: 40px;
+    }
+}
+@media (max-width: 600px) {
+    .dot{
+        padding-inline: 45px;
+    }
+}
+
 @media (max-width: 480px) {
     .year .flex-fill{
         font-size: 11px;
@@ -145,7 +166,7 @@ hr{
         padding-inline: 0px;
     }
     .dot{
-        padding-inline: 20px;
+        padding-inline: 30px;
     }
     .dot div{
         width: 10px;
@@ -157,7 +178,15 @@ hr{
     .card-content{
         padding-inline: 10px;
     }
+    .card-content h3{
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .card-content p{
+        font-size: 13px;
+    }
 }
+
 @media (max-width: 400px) {
     .year{
         padding-inline: 0px;
@@ -165,4 +194,31 @@ hr{
     .dot{
         padding-inline: 20px;
     }
+}
+@media (max-width: 344px) {
+    .year{
+        padding: 0px;
+    }
+    .dot{
+        padding-inline: 8px;
+        margin-left: 8px;
+    }
+}
+
+
+/* Mission */
+.mission{
+    width: 100%;
+    height: auto;
+    padding-block: 50px;
+}
+.mission div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.mission .card{
+    width: 300px;
+    margin: 10px;
 }

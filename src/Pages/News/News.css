@@ -134,6 +134,9 @@
       flex-direction: column;
       align-items: center;
       gap: 18px;
+      position: relative;
+      /* overflow: hidden; */
+      z-index: 2;
     }
     /* .news-card {
       width: 95vw;
@@ -141,6 +144,9 @@
     } */
     .news-img-wrapper {
       height: 180px;
+      overflow: hidden;
+      z-index: 0;
+      border-radius: 5px 5px 0px 0px;
     }
     /* .news-content {
       padding: 18px 12px 18px 12px;

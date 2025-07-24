@@ -143,7 +143,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .event-section {
     padding: 30px 0 0 0;
   }
@@ -156,22 +156,26 @@
     padding: 0.4rem 1.2rem;
   }
   .event-img-wrapper {
-    height: 180px;
+    height: 280px;
   }
   .event-card-content {
-    padding: 1.2rem 1rem 0.8rem 1rem;
+    padding: 15px 20px;
   }
   .event-title {
-    font-size: 1.1rem;
+    font-size: 17px;
+    margin-bottom: 10px;
   }
   .event-date-circle {
     width: 50px;
     height: 50px;
-    font-size: 0.9rem;
-    top: 8px;
-    right: 8px;
+    font-size: 0px;
+    top: 10px;
+    right: 10px;
   }
-  .event-date-day {
-    font-size: 1.1rem;
+  .event-date-day, .event-date-month {
+    font-size: 15px;
   }
-} 
+  .event-datetime{
+    font-size: 15px;
+  }
+}

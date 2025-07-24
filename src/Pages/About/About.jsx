@@ -4,7 +4,7 @@ import History from './History';
 import About_HeroSection from './About_HeroSection';
 import Mission from './Mission';
 
-export default function About() {
+const About = () => {
   return (
     <>
       <section className='about'>
@@ -15,3 +15,5 @@ export default function About() {
     </>
   );
 }
+
+export default About

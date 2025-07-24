@@ -1,6 +1,7 @@
 import React from "react";
 import "./Home.css";
 import { Container } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const programData = [
   {
@@ -44,7 +45,8 @@ const Program = () => (
     </h2>
     <Container className="program-list">
       {programData.map((item, idx) => (
-        <div className="program-row" key={item.title} data-aos="fade-up" data-aos-delay={100 * idx}>
+        <div className="program-row" data-aos="fade-up" data-aos-delay={100 * idx} key={idx}>
+            {/* <Link to={`/events/${idx}`} className="text-decoration-none"> */}
           <div className="program-date">
             <span className="program-month">{item.date.month}</span>
             <span className="program-day">{item.date.day}</span>
@@ -67,6 +69,7 @@ const Program = () => (
             </a>
           </div>
           <hr />
+      {/* </Link> */}
         </div>
       ))}
     </Container>

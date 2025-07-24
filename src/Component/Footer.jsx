@@ -5,12 +5,12 @@ import { Link } from 'react-router-dom';
 import { MdCall } from 'react-icons/md';
 import { GrLocation } from 'react-icons/gr';
 
-export default function Footer() {
+const Footer = () => {
   return (
     <footer style={{ background: '#000', padding: '40px 10px' }}>
       <Container>
-        <Row className="mb-4 align-items-center">
-          <Col md={4} className="">
+        <Row className="mb-4">
+          <Col lg={3} md={5} sm={6} className="">
             <ul>
               <h6>Working Hours:</h6>
               <li>Mon – Tue : 09 AM - 09 PM</li>
@@ -19,8 +19,20 @@ export default function Footer() {
               <li>Sunday : Closed</li>
             </ul>
           </Col>
+
+          <Col lg={2} md={3} sm={6} className="">
+            <ul>
+              <h6>Links</h6>
+              <li><Link to="/">Home</Link></li>
+              <li><Link to="/about">About</Link></li>
+              <li><Link to="/services">Services</Link></li>
+              <li><Link to="/events">Events</Link></li>
+              <li><Link to="/news">News</Link></li>
+              <li><Link to="/contact">Contact</Link></li>
+            </ul>
+          </Col>
           
-          <Col md={4} className="">
+          <Col lg={5} md={12} sm={12} className="">
             <ul>
               <h6>Info:</h6>
               <li><MdCall className='icon'/><a href="tel: +919074309233">9074309233</a></li>
@@ -30,21 +42,9 @@ export default function Footer() {
             </ul>
           </Col>
 
-        
-          <Col md={4} className="">
-            <ul>
-              <h6>Links</h6>
-              <li><Link to="/">Home</Link></li>
-              <li><Link to="/about">About</Link></li>
-              <li><Link to="/services">Services</Link></li>
-              <li><Link to="/events">Events</Link></li>
-              <li><Link to="/contact">Contact</Link></li>
-            </ul>
-          </Col>
-
         </Row>
         <hr />
-        <Row className='mt-4'>
+        <Row className='mt-2'>
           <Col md={6} className="">
             <div className='copy'>
               &copy; {new Date().getFullYear()} INDRAVATI NATYA SAMITI. All rights reserved.
@@ -61,3 +61,5 @@ export default function Footer() {
     </footer>
   );
 } 
+
+export default Footer

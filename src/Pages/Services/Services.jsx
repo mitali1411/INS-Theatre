@@ -1,7 +1,8 @@
 import React from 'react';
+import '../News/News.css'
 import { Container, Row, Col, Card, Image } from 'react-bootstrap';
-import About_HeroSection from '../About/About_HeroSection';
 import { Act, Dance, FilmFestival, Guitar, Illustrator, Illustrator2, ScriptReading, Theater } from '../../constants/imagePath'
+import ServiceHero from './ServiceHero';
 
 const services = [
   { image:Act, title: 'Acting', desc: 'Explore the art of acting with our expert-led workshops and classes.' },
@@ -17,13 +18,13 @@ const services = [
 export default function Services() {
   return (
     <>
-    <About_HeroSection/>
+    <ServiceHero/>
     <section style={{ background: '#fff', padding: '4rem 0' }}>
       <Container>
         <h2 className="discover-title">Our <em className='creative-hub'>Services</em></h2>
         <Row>
           {services.map((service, idx) => (
-            <Col md={3} sm={6} xs={12} key={service.title} className="mb-4" data-aos="fade-up" data-aos-delay={idx * 100}>
+            <Col lg={3} md={4} sm={6} xs={12} key={service.title} className="mb-4" data-aos="fade-up" data-aos-delay={idx * 100}>
               <Card style={{ border: 'none', boxShadow: '0 2px 16px rgba(182,75,72,0.08)', borderRadius: '1rem', transition: 'transform 0.3s' }} className="h-100 service-card">
                 <div className='news-img-wrapper'>
                   <Image src={service.image} alt={service.title} className="news-img"/>

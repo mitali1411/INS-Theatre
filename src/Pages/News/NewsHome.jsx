@@ -1,0 +1,45 @@
+import React from 'react';
+import "../News/News.css"
+import { Card, CardBody, Container, Image } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import { newsItems } from './newsItems';
+
+const NewsHome = () => {
+  const latestNews = newsItems.slice(0, 3); // only 3 items
+  return (
+    <Container fluid className="news-section">
+      <h2 className="discover-title">Explore <em className='creative-hub'>Artistic News</em></h2>
+      <div className="news-cards">
+        {latestNews.map((item, idx) => (
+          <Card className="news-card" key={idx}>
+            <div className="news-img-wrapper">
+              <Image src={item.image} alt={item.title} className="news-img" />
+              <span className="news-date">{item.date}</span>
+            </div>
+            <CardBody className="news-content">
+              <Card.Title className="news-card-title">{item.title}</Card.Title>
+              <Card.Text className="news-desc">{item.desc.slice(0,80)}...</Card.Text>
+              <Link
+                // to={`/news/${idx + 1}/${encodeURIComponent(item.title.replace(/\s+/g, '-').toLowerCase())}`}
+                to={`/news/${item.id}/${encodeURIComponent(item.title.replace(/\s+/g, '-').toLowerCase())}`}
+                className="news-link"
+              >
+                Read More <span className="news-arrow">→</span>
+              </Link>
+            </CardBody>
+          </Card>
+        ))}
+      </div>
+
+        <Link
+                to='/news'
+                className="news-link"
+              >
+                More News
+        </Link>
+
+    </Container>
+  );
+};
+
+export default NewsHome; 

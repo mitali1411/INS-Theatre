@@ -9,6 +9,7 @@ import eventImg3 from '../../assets/26.jpg';
 import eventImg4 from '../../assets/21.jpg';
 import eventImg5 from '../../assets/22.jpg';
 import eventImg6 from '../../assets/23.jpg';
+import EventHero from './EventHero';
 
 const eventData = [
   {
@@ -69,6 +70,8 @@ const Events = () => {
     : eventData.filter(event => event.genre === selectedGenre);
 
   return (
+    <>
+    <EventHero/>
     <Container className="event-section">
       <div className="event-filters">
         {genres.map((genre) => (
@@ -84,7 +87,7 @@ const Events = () => {
       </div>
       <Row className="event-cards-row">
         {filteredEvents.map((event, idx) => (
-          <Col md={4} sm={12} key={event.title} className="mb-4">
+          <Col md={4} sm={12} key={idx} className="mb-4">
             <div className="event-card" data-aos="fade-up" data-aos-delay={idx * 100}>
               <div className="event-img-wrapper">
                 <img src={event.image} alt={event.title} className="event-img" />
@@ -102,6 +105,7 @@ const Events = () => {
         ))}
       </Row>
     </Container>
+</>
   );
 };
 

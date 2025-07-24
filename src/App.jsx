@@ -8,9 +8,12 @@ import Home from './Pages/Home';
 import About from './Pages/About/About';
 import Services from './Pages/Services/Services';
 import Events from './Pages/Event/Events';
-import Contact from './Pages/Contact';
+import Contact from './Pages/Contact/Contact';
+import NewsDetail from './Pages/News/NewsDetail';
+import EventDetail from './Pages/Event/EventDetail';
+import NewsPage from './Pages/News/NewsPage';
 
-function App() {
+const App = () => {
   useEffect(() => {
     AOS.init({ duration: 1200, once: true });
   }, []);
@@ -24,7 +27,10 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
           <Route path="/events" element={<Events />} />
+          <Route path="/events/:id" element={<EventDetail />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path='/news' element= {<NewsPage/>}/>
+          <Route path="/news/:id/:title" element={<NewsDetail />} />
         </Routes>
       </main>
       <Footer />

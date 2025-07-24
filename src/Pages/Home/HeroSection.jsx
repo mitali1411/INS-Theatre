@@ -8,6 +8,7 @@ import img5 from "../../assets/Images/bellet.jpg";
 import img6 from "../../assets/Images/guitar.jpg";
 import img7 from "../../assets/Images/illustrator.jpg";
 import img8 from "../../assets/Images/popstar.jpg";
+import { Link } from "react-router-dom";
 // import bgImg from "../../assets/Images/pexels-psad-1749822.jpg";
 
 const Home = () => (
@@ -23,11 +24,13 @@ const Home = () => (
     <img src={img8} alt="" className="float-img img8" data-aos="fade-down" data-aos-delay="800" />
     {/* Main content */}
     <div className="hero-content" data-aos="zoom-in" data-aos-delay="300">
-      <h1>Creativity and emotion</h1>
+      <h1>Indravati Natya Samiti</h1>
       <p>
         Discover captivating tales, breathtaking performances, and unforgettable <br />moments in the heart of our theater.
       </p>
-      <button className="cta-btn">More About Us</button>
+      <button className="cta-btn">
+        <Link to='/about' className="">More About Us</Link>
+      </button>
     </div>
   </div>
 );
